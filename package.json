@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "Backend for Mad-Libs React project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Donohoo13/Mad-Lib-Backend.git"
+  },
+  "author": "Donohoo13",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Donohoo13/Mad-Lib-Backend/issues"
+  },
+  "homepage": "https://github.com/Donohoo13/Mad-Lib-Backend#readme",
+  "dependencies": {
+    "pg-promise": "^8.5.4"
+  }
+}
