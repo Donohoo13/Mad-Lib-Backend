@@ -47,11 +47,22 @@ CREATE TABLE `entries` (
 -- Insert seed data
 INSERT INTO `slot_types` (`id`, `type`)
 VALUES
-	(1, 'noun'),
-	(2, 'adjective'),
-	(3, 'first name'),
+	(1, 'first name'),
+	(2, 'last name'),
+	(3, 'nickname'),
 	(4, 'city'),
-	(5, 'last name'),
-	(6, 'color'),
-	(7, 'verb'),
-	(8, 'adverb');
+	(5, 'state'),
+	(6, 'country'),
+	(7, 'noun'),
+	(8, 'plural noun'),
+	(9, 'pronoun'),
+	(10, 'adjective'),
+	(11, 'verb'),
+	(12, 'adverb'),
+	(13, 'number'),
+	(14, 'number (1-10)'),
+	(15, 'number (1-100)'),
+	(16, 'number (1-1,000)'),
+	(17, 'number (1-10,000)'),
+	(18, 'number (1-100,000)'),
+	
