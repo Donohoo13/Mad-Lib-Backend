@@ -65,4 +65,11 @@ VALUES
 	(16, 'number (1-1,000)'),
 	(17, 'number (1-10,000)'),
 	(18, 'number (1-100,000)'),
+	(19, 'part of the body'),
+	(20, 'body part'),
+	(21, 'color'),
+	(22, 'type of weather'),
+	(23, 'time of day'),
+	(24, 'food'),
+	(25, 'type of food'),
 	
