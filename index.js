@@ -10,8 +10,14 @@ const port = 3001;
 const { 
   getSlotTypes,
   getSlotType,
-  createSlotType
+  createSlotType,
+  getTemplate
 } = require ('./app/db');
+
+app.get('/template/:id', async (req, res) => {
+    const template = await getTemplate(req.params.id);
+    res.json(template)
+})
 
 app.get('/slot_types', async (req, res) => {
   const slotTypes = await getSlotTypes();

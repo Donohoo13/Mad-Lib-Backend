@@ -43,3 +43,14 @@ module.exports.createSlotType = async (slotType) => {
     });
   });
 };
+
+module.exports.getTemplate = async (id) => {
+  return new Promise((resolve, reject) => {
+    connection.query(`
+    SELECT * FROM mad_lib_templates WHERE id = ${id}
+    `, (err, results) => {
+      if (err) reject(err);
+      resolve(results[0]);
+    });
+  })
+};

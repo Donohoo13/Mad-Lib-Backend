@@ -1,8 +1,8 @@
 CREATE TABLE `mad_lib_templates` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `title` text NOT NULL,
-  `content` longtext NOT NULL,
   `category` varchar(50) DEFAULT '',
+  `content` longtext NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -71,5 +71,13 @@ VALUES
 	(22, 'type of weather'),
 	(23, 'time of day'),
 	(24, 'food'),
-	(25, 'type of food'),
+	(25, 'type of food');
 	
+  INSERT INTO `mad_lib_templates` (`id`, `title`, `category`, `content`)
+  VALUES
+  (1, 'the leprechaun', 'random',
+  'The funny thing about Leprachauns is you never really know when they are going to “11”.  It can be in the park, outside with “1”, or even in “4”.  The point is, you should never trust Leprachauns with “7”.');
+
+  INSERT INTO `slots` (`id`, `mad_lib_template_id`, `slot_type_id`)
+  VALUES
+  (1, 1, 11);
